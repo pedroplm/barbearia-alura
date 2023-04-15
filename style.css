@@ -1,0 +1,374 @@
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --background-image: url("./assets/background-barber.png");
+  --color-brown: #4d3115;
+}
+/* ######################## Todas as paginas ######################### */
+body {
+  font-family: var(--font-family);
+}
+header {
+  background-color: bisque;
+  padding: 20px 0;
+}
+
+.caixa {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #4d3115;
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  background: url("./assets/bg.jpg");
+  padding: 40px 0;
+}
+
+.copyright {
+  color: #ffffff;
+  font-size: 13px;
+  margin: 20px 0 0;
+}
+
+main {
+  width: 940px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+/* ######################## Fim todas as páginas ######################### */
+
+/* ######################## Página inicial  ######################### */
+
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+.principal p {
+  margin: 0 0 3em;
+  letter-spacing: 1px;
+}
+
+.utensilios {
+  width: 150px;
+  float: left;
+  margin: 0 20px 20px 0;
+
+  box-shadow: -4px 4px 8px black;
+}
+
+.principal strong {
+  font-weight: bold;
+}
+.principal em {
+  font-style: italic;
+}
+.titulo-principal {
+  padding-top: 1em;
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
+}
+
+iframe {
+  border-radius: 20px;
+}
+.mapa {
+  padding: 3em 0;
+}
+
+.mapa .titulo-principal {
+  padding-top: 0;
+}
+.mapa p {
+  text-align: center;
+  margin: 0 0 3em;
+  letter-spacing: 1px;
+}
+
+.beneficios {
+  padding: 3em 0;
+}
+
+.beneficios-ul-img {
+  /* para ativar o flexbox display:flex*/
+  display: flex;
+  /* por default flex-direction é row, com o eixo principal sendo o eixo X
+	caso flex-direction seja column o eixo principal vira Y
+	*/
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.beneficios-ul-img ul {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.beneficios-ul-img li:before {
+  content: "✁ ";
+}
+
+.beneficios-ul-img li {
+  padding: 1em;
+  font-weight: 600;
+}
+.imagem-beneficios {
+  width: 50%;
+  box-shadow: 4px 4px 10px black;
+}
+
+.beneficios-video {
+  width: 940px;
+  margin: 2em auto;
+}
+
+/* ######################## Fim página inicial  ######################### */
+
+/* ######################## Produtos ######################### */
+
+.produtos {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.produtos li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+.produtos li:hover {
+  border-color: var(--color-brown);
+}
+
+.produtos li:hover h2 {
+  font-size: 32px;
+  color: var(--color-brown);
+}
+
+.produtos li:active {
+  border-color: #088c19;
+}
+.produtos li:active h2 {
+  color: #088c19;
+}
+
+.produtos h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.produto-descricao {
+  font-size: 18px;
+}
+
+.produto-preco {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* ######################## Fim produtos  ######################### */
+
+/* ######################## Contato  ######################### */
+
+form {
+  margin: 40px 0;
+}
+
+form label,
+form legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.input-padrao {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
+
+.checkbox {
+  margin: 20px 0;
+}
+
+.enviar {
+  width: 40%;
+  padding: 15px 0;
+  background: orange;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background: darkorange;
+  transform: scale(1.2);
+}
+
+table {
+  margin: 20px 0 40px;
+}
+
+thead {
+  background: #555555;
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  border: 1px solid #000000;
+  padding: 8px 15px;
+}
+
+/* ######################## Fim contato  ######################### */
+
+/* ######################## Media Screen  ######################### */
+
+@media screen and (max-width: 940px) {
+  nav {
+    margin: 20px;
+  }
+  main {
+    width: 100%;
+  }
+  .caixa,
+  .principal,
+  .mapa,
+  .beneficios,
+  .beneficios-video,
+  .produtos {
+    width: auto;
+  }
+  .produtos li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    margin: 40px auto;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  h1 {
+    text-align: center;
+  }
+  .caixa {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    position: static;
+  }
+  main {
+    width: 90%;
+  }
+
+  .principal,
+  .mapa,
+  .beneficios,
+  .beneficios-video {
+    width: auto;
+  }
+
+  .beneficios-ul-img {
+    /* para ativar o flexbox display:flex*/
+    display: flex;
+    /* por default flex-direction é row, com o eixo principal sendo o eixo X
+	  caso flex-direction seja column o eixo principal vira Y
+	  */
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .beneficios-ul-img ul {
+    width: 90%;
+  }
+
+  .imagem-beneficios {
+    width: 90%;
+    height: auto;
+    box-shadow: 4px 4px 10px black;
+  }
+  .produtos li {
+    margin: 5px;
+  }
+}
+
+/* ########################  Anotações   ######################### */
+
+/* 
+Seletores avançados CSS
+
+Seletor >, para acessar os filhos de determinado elemento. Por exemplo, para acessar todos os p dentro de main:
+main > p {
+}
+
+Seletor +, para acessar o primeiro irmão de determinado elemento. Por exemplo, para acessar o primeiro p após um img:
+img + p {
+}
+
+Seletor ~, para acessar todos os irmãos de determinado elemento. Por exemplo, para acessar todos os p após um img:
+img ~ p {
+}
+
+Seletor not, para acessar os elementos, exceto algum. Por exemplo, para acessar todos os p dentro de main, exceto o p que tem id missao:
+main p:not(#missao) {
+}
+
+Como fazer contas com CSS, com a propriedade calc:
+	ex: 
+	width: calc(33% - 10px);
+*/
