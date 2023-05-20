@@ -270,7 +270,7 @@ th {
 
 /* ######################## Media Screen  ######################### */
 
-@media screen and (max-width: 940px) {
+@media (max-width: 940px) {
   nav {
     margin: 20px;
   }
@@ -297,9 +297,12 @@ th {
     border: 2px solid #000000;
     border-radius: 10px;
   }
+  .produto-li img{
+    width: 30px;
+  }
 }
 
-@media screen and (max-width: 540px) {
+@media (max-width: 540px) {
   h1 {
     text-align: center;
   }
@@ -342,8 +345,13 @@ th {
     height: auto;
     box-shadow: 4px 4px 10px black;
   }
-  .produtos li {
-    margin: 5px;
+  .produto-li img{
+    width: 30px;
+  }
+}
+@media (max-width: 540px){
+  .produtos-img{
+    width: 150px;
   }
 }
 
